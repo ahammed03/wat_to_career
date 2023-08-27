@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family:  'poppins', sans-serif;
+        }
+
+        .box_1 {
+           
+            background-color: rgb(196, 230, 230);
+            height: 400px;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+        span{
+            padding: 5px;
+            width: 50px;
+            height: 20px;
+            border: solid 1px black;
+            border-radius: 4px;
+        }
+      
+        .Email_box,.password_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+        }
+        p{
+            padding-bottom: 5px;
+        }
+        input{
+            height: 30px;
+            border: none;
+            border-radius: 4px;
+        
+        }
+        button{
+            width: 60px;
+            height: 25px;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        @media (max-width:300px){
+            .box_1{
+                width: 90%;
+                
+            }
+            input{
+                width: 190px;
+            }
+        }
+
+        
+     
+        
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="box_1">
+        <div class="Title">
+            <h2>Welcome back</h2>
+        </div>
+        <div class="Email_box">
+            <p>What's your email?</p>
+            <input type="email" placeholder=" E-mail" name="email">
+        </div>
+        <div class="password_box">
+            <p>Your password?</p>
+            <input type="password" placeholder=" Password" name="password">
+        </div>
+        <div class="button_box">
+            <button> <a href='#'>Login</a></button>
+        </div>
+        <div class="forget_box">
+            <a href="#">Forgot password</a>
+        </div>
+        
+    </div>
+
+
+</body>
+
+</html>
